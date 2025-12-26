@@ -6,10 +6,10 @@ manifest:
       url-base: https://github.com/royyandzakiy
 
   projects:
-    # - name: zephyr
-    #   remote: zephyrproject
-    #   revision: v4.3.0  # Easily upgrade this string later
-    #   import: false     # This pulls in all Zephyr dependencies (HALs, CMSIS, etc.)
+    - name: zephyr
+      remote: zephyrproject
+      revision: v4.3.0  # Easily upgrade this string later
+      import: false     # This pulls in all Zephyr dependencies (HALs, CMSIS, etc.)
 
     - name: balancer-robot-fw
       remote: royyandzakiy
