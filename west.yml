@@ -1,0 +1,25 @@
+manifest:
+  remotes:
+    - name: zephyrproject
+      url-base: https://github.com/zephyrproject-rtos
+    - name: royyandzakiy
+      url-base: https://github.com/royyandzakiy
+
+  projects:
+    - name: zephyr
+      remote: zephyrproject
+      revision: v4.3.0  # Easily upgrade this string later
+      import: true     # This pulls in all Zephyr dependencies (HALs, CMSIS, etc.)
+
+    - name: balancer-robot-fw
+      remote: royyandzakiy
+      revision: main
+      path: firmware   # Folder name in your local workspace
+
+    - name: balancer-robot-app
+      remote: royyandzakiy
+      revision: main
+      path: desktop-app # Folder name in your local workspace
+
+  self:
+    path: manifest-repo
