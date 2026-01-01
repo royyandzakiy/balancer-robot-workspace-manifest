@@ -28,6 +28,15 @@ west update
 # Install python dependencies
 pip install -r zephyr/scripts/requirements.txt
 
+# Manually checkout each project
+cd firmware
+git checkout main
+git pull
+
+cd ../desktop-app
+git checkout main
+git pull
+
 ```
 
 ## Documentation Hierarchy
