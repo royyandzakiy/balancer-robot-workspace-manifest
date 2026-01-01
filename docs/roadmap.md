@@ -1,15 +1,10 @@
 # Development Backlog & Roadmap
 
-## Phase 1: Foundation (Current) 🛠️
-- [x] Workspace Initialization with West
-- [x] Basic Zephyr Kernel boot on target hardware
-- [ ] IMU Driver integration (BNO055/MPU6050)
+## Phase 1: Basic functionable boostrap
+- Implement all in single main file, just enough for them to have their basic working functions, no shiny things (OTA, foldering, etc)
 
-## Phase 2: Intelligence 🧠
-- [ ] PID Control Loop implementation
-- [ ] Complementary/Kalman Filter for tilt sensing
-- [ ] BLE Telemetry Service
+## Phase 2: Structuring
+- Refactor with targetted internal file structure, decompose & compose with dependency injection in mind
 
-## Phase 3: Ecosystem 🖥️
-- [ ] Desktop App MVP (Control + Graphing)
-- [ ] Over-the-Air (OTA) updates via MCUBoot
+## Phase 3: Advanced Features
+- TBD
