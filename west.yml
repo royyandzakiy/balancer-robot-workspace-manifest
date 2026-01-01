@@ -11,7 +11,7 @@ manifest:
     - name: sdk-nrf
       remote: nrfconnect
       revision: v3.2.1
-      import:
+      import: # consider just 'true' to import all
         name-allowlist:
           - sdk-zephyr
           - sdk-nrfxlib
@@ -25,12 +25,12 @@ manifest:
     - name: balancer-robot-firmware
       remote: royyandzakiy
       revision: main
-      path: firmware   # Folder name in your local workspace
+      path: firmware
 
     - name: balancer-robot-app
       remote: royyandzakiy
       revision: main
-      path: desktop-app # Folder name in your local workspace
+      path: desktop-app
 
   self:
     path: workspace-manifest
