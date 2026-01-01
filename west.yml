@@ -11,7 +11,7 @@ manifest:
       revision: v4.3.0  # Easily upgrade this string later
       import: false     # This pulls in all Zephyr dependencies (HALs, CMSIS, etc.)
 
-    - name: balancer-robot-fw
+    - name: balancer-robot-firmware
       remote: royyandzakiy
       revision: main
       path: firmware   # Folder name in your local workspace
