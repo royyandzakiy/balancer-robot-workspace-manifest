@@ -4,12 +4,23 @@ manifest:
       url-base: https://github.com/zephyrproject-rtos
     - name: royyandzakiy
       url-base: https://github.com/royyandzakiy
+    - name: nrfconnect
+      url-base: https://github.com/nrfconnect
 
   projects:
-    - name: zephyr
-      remote: zephyrproject
-      revision: v4.3.0  # Easily upgrade this string later
-      import: false     # This pulls in all Zephyr dependencies (HALs, CMSIS, etc.)
+    - name: sdk-nrf
+      remote: nrfconnect
+      revision: v3.2.1
+      import:
+        name-allowlist:
+          - sdk-zephyr
+          - sdk-nrfxlib
+          - mcuboot
+          - mbedtls
+          - trusted-firmware-m
+          - cmsis
+          - hal-nordic
+      path: ncs
 
     - name: balancer-robot-firmware
       remote: royyandzakiy
