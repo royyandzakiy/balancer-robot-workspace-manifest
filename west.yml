@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/royyandzakiy
     - name: nrfconnect
       url-base: https://github.com/nrfconnect
+    - name: anobli
+      url-base: https://github.com/anobli
 
   projects:
     - name: sdk-nrf
@@ -31,6 +33,11 @@ manifest:
       remote: royyandzakiy
       revision: main
       path: desktop-app
+
+    - name: googletest
+      remote: anobli
+      repo-path: googletest
+      revision: 8e3886acac2e6058f4f540269f43b1f4a2700adc
 
   self:
     path: workspace-manifest
