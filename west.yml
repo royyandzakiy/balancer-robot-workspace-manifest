@@ -38,6 +38,7 @@ manifest:
       remote: anobli
       repo-path: googletest
       revision: 8e3886acac2e6058f4f540269f43b1f4a2700adc
+      path: modules/googletest
 
   self:
     path: workspace-manifest
